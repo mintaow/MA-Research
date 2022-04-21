@@ -8,7 +8,7 @@
 The research aims to explore the time serial correlation between the rising cost of living and changes in public risk perception on Twitter, especially of cryptocurrency. Additionally, this study will depict the opinion dynamics in terms of how the polarization evolves using computational social network methods.
 ## Key Concepts and Proxies
 ### Cost of Living
-  The cost of living is measured by measured using [monthly Consumer Price Index (CPI-U) from U.S.Bureau of Labor Statistics](https://www.bls.gov/cpi/)
+  The cost of living is measured by [monthly Consumer Price Index (CPI-U) from U.S.Bureau of Labor Statistics](https://www.bls.gov/cpi/)
 ### Opinions towards Cryptocurrency    
   I would retrieve the sentiments from the bitcoin-related tweets (see [source](https://www.kaggle.com/datasets/alaix14/bitcoin-tweets-20160101-to-20190329?sort=votes)) and use the Percentage of positive/negative tweets towards cryptocurrency as the proxy for the cost of living (Bovet et al., 2018).
 ### Opinion Dynamics and Polarization   
