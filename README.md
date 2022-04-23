@@ -23,4 +23,10 @@ The research aims to explore the time serial correlation between the rising cost
 **2. Vector Autoregressive Models (VAR)**
     Since depending solely on Granger causality has the potential to result in temporal gaps between rising costs of living and resulting opinion shifts. Furthermore, Granger causality analysis does not attempt to quantify the magnitude of effects, which is important in our context. I would use First-order Vector Autoregressive (VAR) models, which predict each variable by all variables including itself at the previous time point, as the next step to study quantitatively how the cost of living fluctuation over the past several months predicts the future trend in public opinions towards cryptocurrency. This VAR model is widely used to analyze the dependencies across time in such data and are already used extensively in applied research (Bringmann et al., 2013; Fisher et al., 2017; Groen et al., 2019; Pe et al., 2015; Snippe et al., 2017).
 
-To replicate the analysis and produce all of the figures and quantitative analyses, run the notebook in the code folder of this repository via the instructions in the file. If you use this repository for a scientific publication, it would be appreciated if you cited the Zenodo DOI (To be Updated).
+## Note
+### How to Replicate the Findings
+To replicate the analysis and produce all of the figures as well as analyses, run the notebook in the code folder of this repository via the instructions in the file. The code was written in Python 3.7.11 on Google Colab. and all of its dependencies can be fulfilled by running the `!pip install` code lines embedded. You can also refer to the requirements.txt file in this repository for details.
+
+It is worth noting that due to [Github's hard limit on the file size](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github), only **a sample snapshot** of the Bitcoin-related Twitter was uploaded. To abide by the Twitter developer policy, I removed the user name attributes and tweet IDs. The complete dataset can be found [here](https://www.kaggle.com/datasets/alaix14/bitcoin-tweets-20160101-to-20190329?sort=votes).  
+
+If you use this repository for a scientific publication, it would be appreciated if you cited the Zenodo DOI.
