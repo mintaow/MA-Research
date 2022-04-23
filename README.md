@@ -29,4 +29,5 @@ To replicate the analysis and produce all of the figures as well as analyses, ru
 
 It is worth noting that due to [Github's hard limit on the file size](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github), only **a sample snapshot** of the Bitcoin-related Twitter was uploaded. To abide by the Twitter developer policy, I removed the user name attributes and tweet IDs. The complete dataset can be found [here](https://www.kaggle.com/datasets/alaix14/bitcoin-tweets-20160101-to-20190329?sort=votes).  
 
-If you use this repository for a scientific publication, it would be appreciated if you cited the Zenodo DOI.
+If you use this repository for a scientific publication, it would be appreciated if you cited the Zenodo DOI ([to be updated](https://github.com/zenodo/zenodo/issues/1814)) or the following reference format: 
+> Wei, Mintao, Changing Opinions Towards Cryptocurrency Under Rising Cost of Living, (2022), GitHub repository, https://github.com/macs30200-s22/replication-materials-mintaow/
