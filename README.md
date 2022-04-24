@@ -16,6 +16,10 @@ The research aims to explore the time serial correlation between the rising cost
   1. The distribution of the number of likes & retweets for those cryptocurrency-favored tweets
   2. Sentiment Polarity Score: Positiveness(Average number of positive words/scores per tweet in the period) - Negativeness(Average number of negative words/scores per tweet in the period)
   3. \**Community Detection + Polarization Visualization using Subgraphs (if data permits)*
+## Hypotheses
+1. **H1:** Faced with rising living costs, people tend to become more risk-taking and thus less antagonistic to cryptocurrencies on social media platforms.
+2. **H2:** When the cost of living rises, the crypto-favoring thoughts and opinions are liked and retweeted more and thus spread faster across the social network, resulting in a more distinct polarization.
+
 ## Model and Methods   
 **1. Granger Causality**
     I will examine the causal predictability of past monthly CPI on future percentage of crypto-endorsed tweets above and beyond historical tweet sentiments, using the Granger Causality Test described in Mooijman et al. (2018). 
@@ -31,3 +35,16 @@ It is worth noting that due to [Github's hard limit on the file size](https://do
 
 If you use this repository for a scientific publication, it would be appreciated if you cited the Zenodo DOI ([to be updated](https://github.com/zenodo/zenodo/issues/1814)) or the following reference format: 
 > Wei, Mintao, Changing Opinions Towards Cryptocurrency Under Rising Cost of Living, (2022), GitHub repository, https://github.com/macs30200-s22/replication-materials-mintaow/
+
+# Preliminary Findings
+
+## 1. Cost of Living
+  Despite temporary sliding down in the second half of certain years (e.g. 2014, 2015, 2018), the cost of living generally rises up steadily from a long-term perspective.
+  
+## 2. Cryptocurrency Market Trend & Sentiment
+  The activeness of people participating in bitcoin related discussion on Twitter drastically climbed up after 2017, when the market prices rocket up since 2017. This might imply a strong correlation of social discussion and market prices, which needs to be controlled when studying the time serial effect of living cost.
+
+## 3. Relationship between Crypto Sentiments and Cost of Living
+  The time serial plots identify multiple time ranges when the month-over-month fluctuations of percentage of BTC favoring tweets and CPI are very similar to each other (e.g. 2015/04~2018/03). This initial finding suggests that the cost of living might be time serial correlated with the dynamics of positive opinions towards cryptocurrencies at a very short lag.
+
+  In addition, generally, people tend to engage more with bitcoin-favoring tweets from 2012 to 2019. When the cost of living climbs up at a higher speed, the average number of likes and retweets per bitcoin favoring tweet also spikes. However, further work needs to be done to exclude the confoundness effect from external bitcoin market movement and people's overall activeness in talking about bitcoins (not just those tweets endorsing cryptocurrencies).   
