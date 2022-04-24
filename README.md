@@ -25,7 +25,7 @@ The research aims to explore the time serial correlation between the rising cost
 
 ## Note
 ### How to Replicate the Findings
-To replicate the analysis and produce all of the figures as well as analyses, run the notebook in the code folder of this repository via the instructions in the file. The code was written in Python 3.7.11 on Google Colab. and all of its dependencies can be fulfilled by running the `!pip install` code lines embedded. You can also refer to the requirements.txt file in this repository for details.
+To replicate the analysis and produce all of the figures as well as analyses, run the notebook in the code folder of this repository via the instructions in the file. The code was written in Python 3.7.13 on Google Colab. and all of its dependencies can be fulfilled by running the `!pip install` code lines embedded. You can also refer to the requirements.txt file in this repository for details.
 
 It is worth noting that due to [Github's hard limit on the file size](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github), only **a sample snapshot** of the Bitcoin-related Twitter was uploaded. To abide by the Twitter developer policy, I removed the user name attributes and tweet IDs. The complete dataset can be found [here](https://www.kaggle.com/datasets/alaix14/bitcoin-tweets-20160101-to-20190329?sort=votes).  
 
