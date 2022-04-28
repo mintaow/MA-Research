@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/482983391.svg)](https://zenodo.org/badge/latestdoi/482983391)
+
 # Research: Changing Opinions Towards Cryptocurrency Under Rising Cost of Living
 **Course:** MACS 30200 Perspectives in Computational Research   
 **Author:** Mintao Wei (mintao@uchicago.edu)
