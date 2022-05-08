@@ -33,43 +33,14 @@ Faced with rising living costs, driven by the aspiration to escape poverty, peop
  
 ## 3. Relationship between Crypto Sentiments and Cost of Living
   To explore the correlation between bitcoin sentiments and the cost of living, I visualized the dynamics of the two corresponding proxies: the percentage of Bitcoin favoring tweets and CPI in Figure 3(a). the month-over-month differences were also mapped to exclude the effect of intrinsic time serial trends. As demonstrated in Figure 3(a), in spite of the volatility in the percentage of positive sentiments, we can observe a persistent upward growing trend after 2017 if evaluating from the long-term perspective. This resembles the steadily rising momentum in CPI and suggests a latent positive correlation between the two variables over a longer period. This is reiterated by the evidence in the shaded band of Figure 3(b), where the movement in the positive sentiments correspond to the CPI fluctuations in the past 3 months. Therefore, we hypothesize that there exists a positive correlation at a time lag of around 3 months. Meanwhile, due to the high volatility, we might also expect a negative correlation implied by the direct impact of CPI variations in a short time window.  ![image](https://github.com/macs30200-s22/replication-materials-mintaow/blob/main/graph/eda_btc_cpi_lineplot_2.png)
-*Figure 3: Relationship between Cryptocurrency Sentiments and Cost of Living. (a) the relationship between percentage of BTC-favoring tweets and CPI in raw values. (b) the relationship between the two variables in month-over-month difference form. *
+*Figure 3: Relationship between Cryptocurrency Sentiments and Cost of Living. (a) the relationship between percentage of BTC-favoring tweets and CPI in raw values. (b) the relationship between the two variables in month-over-month difference form.*     
+
   Furthermore, the p-value for the granger causality test of the CPI Month-over-Month Diff (X) on the Percentage of BTC Favoring Tweets Month-over-Month Diff(Y) is 0.0001, while the reverse direction is not statistically significant. We are confident to reject the null hypothesis and conclude that historical values of the CPI month-over-month differences exert a statistically significant effect on the current Bitcoin-favoring sentiments.
 
   The below two findings from VAR(1) and VAR(12) provide quantitative evidence that the influence of the cost of living on the public crypto-favoring sentiments is a mix of short-term suppression and long-term promotion, with the market price fluctuation controlled. The rising cost of living tends to first result in negative emotions such as “fear of loss”. People become even more concerned about falling into poverty that they choose to stay against risky projects. However, the ever-increasing living cost induces risk-taking impulses. Individuals have “nothing left to lose” and therefore aspire to escape from the poverty trap through risky moves such as adopting cryptocurrencies (Chivers, 2017).
 
-**Table 1: Results for VAR(1): Y = perc_btc_favor_diff**
-=========================================================================
-                        coefficient     std.error      t-stat      prob
--------------------------------------------------------------------------
-const        	            0.018687       0.013995       1.335       0.182
-L1.cpi_month_diff  	     -0.037909       0.018219       -2.081     0.037**
-L1.perc_btc_favor_diff   -0.307041       0.100277       -3.062    0.002***
-L1.avg_price_month_diff   				              CONTROL
-=========================================================================
-Note: L1 is the abbreviation for the lag order of 1.
+<img width="570" alt="image" src="https://user-images.githubusercontent.com/71967604/167309964-22863531-0c33-4107-8d9a-4f8b18a4927d.png">
 
-**Table 2: Results for VAR(12): Y = perc_btc_favor_diff**
-=========================================================================
-                        coefficient      std.error      t-stat      prob
--------------------------------------------------------------------------
-const              	     -0.014005       0.030447      -0.460      0.646
-L1.cpi_month_diff        -0.023166       0.030373      -0.763      0.446
-L2.cpi_month_diff        -0.012412       0.034534      -0.359      0.719
-L3.cpi_month_diff         0.105482       0.035465       2.974   0.003***
-L4.cpi_month_diff        -0.039477       0.038854      -1.016      0.310
-L5.cpi_month_diff         0.033086       0.036615      -0.904      0.366
-L6.cpi_month_diff        -0.034169       0.035268      -0.969      0.333
-L7.cpi_month_diff         0.044045       0.033459       1.316      0.18
-L8.cpi_month_diff         0.010820       0.034138       0.317      0.751
-L9.cpi_month_diff         0.050473       0.034082       1.481      0.139
-L10.cpi_month_diff        0.037386       0.034309       1.090      0.276
-L11.cpi_month_diff       -0.000724       0.033486      -0.022      0.983
-L12.cpi_month_diff       -0.021027       0.029415      -0.715      0.475
-L1~L12.perc_btc_favor_diff   			            CONTROL
-L1~L12.avg_price_month_diff   			          CONTROL
-=========================================================================
-Note: L1~L12 is the abbreviation for the lag order of 1~12.
 
 
 ## Note
